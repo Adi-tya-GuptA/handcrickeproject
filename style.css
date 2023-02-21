@@ -210,3 +210,42 @@ p {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 5px;
+  }
+  .game-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    width: 36rem;
+    height: 88rem;
+  }
+  .player,
+  .computer {
+    width: 20rem;
+  }
+  aside {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    border: 0.3rem solid white;
+    padding: 1.5rem;
+    position: absolute;
+    top: 30%;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+  }
+  .left {
+    padding: 2rem 1rem;
+  }
+  .right h2 {
+    margin: 1rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+}
